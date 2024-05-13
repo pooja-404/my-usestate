@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Section from './components/Section';
+import Section2 from './components/Section2';
+import Section1 from './components/Section1';
+import Tabsec from './components/Tabsec';
+import Practice from './components/Practice';
+import Modalsec from './components/Modalsec';
+import Todo from './components/Todo';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <Section1 />
+      <Section />
+      <Section2 />
+      <Tabsec /> 
+      {/* <Practice /> */}
+      {/* <Modalsec /> */}
+      <Todo />
     </div>
   );
 }

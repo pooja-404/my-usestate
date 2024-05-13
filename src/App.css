@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none !important;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gap-80 {
+    gap: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-black {
+    color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.overflow-hidden {
+    overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.menu>span {
+    height: 5px;
+    width: 30px;
+    border-radius: 10px;
+    background: black;
+    margin-top: 5px;
+    display: none;
+    flex-direction: column;
+    z-index: 5 !important;
+    position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.view {
+    right: 0 !important;
+}
+
+.right-100 {
+    right: -100%;
+}
+
+.text-green {
+    color: green;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+.fs-35{
+    font-size: 35px !important;
+}
+.text-brown{
+    color: brown;
+}
+
+
+.text-pink {
+    color: blueviolet;
+}
+.modal-card{
+    height: 50%;
+    width: 60%;
+    background-color: rgb(206, 194, 247);
+    border-radius: 20px;
+}
+
+@media (max-width:786px) {
+    .mobile {
+        flex-direction: column !important;
+        display: flex;
+        position: fixed;
+        height: 100vh !important;
+        background: rgb(51, 173, 244);
+        top: 0;
+        width: 100% !important;
+        transition: .7s;
+    }
+
+    .menu>span {
+        display: flex !important;
+    }
+}
+
+.max-w-500 {
+    max-width: 500px;
 }
